@@ -1,0 +1,22 @@
+[project]
+name = "customer_churn_prediction"
+version = "0.1.0"
+description = "Predict customer churn or not on bank dataset."
+authors = [
+  { name = "bhumil chauhan", email = "bhumilchauhan1914@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+# List your required dependencies here
+dependencies = [
+  "numpy==1.24.0",
+  "pandas==1.5.0",
+  "scikit-learn==1.2.0",     # remove or add as needed
+
+]
+
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
