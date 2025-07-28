@@ -48,7 +48,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 🧪 Prerequisites
 
-* Python 3.8+
+* Python 3.8
 * Conda installed
 * Git installed
 
