@@ -48,7 +48,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 🧪 Prerequisites
 
-* Python 3.10+
+* Python 3.8+
 * Conda installed
 * Git installed
 
@@ -92,7 +92,7 @@ cp .env.example .env
 ### 5. Run the App
 
 ```bash
-python app.py
+python application.py
 ```
 
 Then go to your browser: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
@@ -105,7 +105,6 @@ Create a `.env` file and add:
 
 ```env
 SECRET_KEY=your-secret-key-here
-DEBUG=True
 ```
 
 ---
