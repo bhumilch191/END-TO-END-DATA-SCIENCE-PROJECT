@@ -37,7 +37,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 📁 Dataset
 
-* Dataset Source: [Kaggle - Customer Churn Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn))
+* Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
 * You may need a Kaggle account to download the dataset.
 
 ---
@@ -59,7 +59,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/bhumilcha191/customer-churn-prediction.git
+git clone https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT.git
 cd customer-churn-prediction
 ```
 
@@ -168,4 +168,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ## 🧑‍💻 Author
 
 **Bhumil Chauhan**
-[LinkedIn]((https://www.linkedin.com/in/bhumil-chauhan-01a147245/)) • [GitHub]((https://github.com/bhumilch191))
+[LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
