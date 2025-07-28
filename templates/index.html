@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white shadow-lg rounded-2xl w-full max-w-2xl p-6 space-y-6">
+        <h2 class="text-2xl font-bold text-center text-blue-700">Customer Churn Prediction</h2>
+
+        <div class="flex justify-center gap-4">
+            <button onclick="showForm()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg">Enter Manually</button>
+            <button onclick="showFile()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg">Upload CSV</button>
+        </div>
+
+        <!-- Manual Input Form -->
+        <form method="POST" action="/predict" enctype="multipart/form-data" id="form-details" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="font-semibold">Credit Score</label>
+                    <input type="number" name="CreditScore" required 
+                    class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600"
+>
+                </div>
+                <div>
+                    <label class="font-semibold">Geography</label>
+                    <select name="Geography" required 
+                    class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-semibold">Gender</label>
+                    <select name="Gender" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-semibold">Age</label>
+                    <input type="number" name="Age" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Tenure</label>
+                    <input type="number" name="Tenure" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Balance</label>
+                    <input type="number" name="Balance" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Num of Products</label>
+                    <input type="number" name="NumOfProducts" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Has Credit Card (0 or 1)</label>
+                    <input type="number" name="HasCrCard" min="0" max="1" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Is Active Member (0 or 1)</label>
+                    <input type="number" name="IsActiveMember" min="0" max="1" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Estimated Salary</label>
+                    <input type="number" name="EstimatedSalary" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Complain (0 or 1)</label>
+                    <input type="number" name="Complain" min="0" max="1" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Satisfaction Score (1–5)</label>
+                    <input type="number" name="Satisfaction Score" min="1" max="5" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+                <div>
+                    <label class="font-semibold">Card Type</label>
+                    <select name="Card Type" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Diamond">Diamond</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-semibold">Point Earned</label>
+                    <input type="number" name="Point Earned" required class="w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:border-2 focus:border-blue-600">
+                </div>
+            </div>
+            <input type="submit" value="Predict" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+        </form>
+
+        <!-- File Upload Form -->
+        <form method="POST" action="/predict" enctype="multipart/form-data" id="form-file" class="hidden space-y-4">
+            <label class="font-semibold">Upload CSV File</label>
+            <input type="file" name="file" accept=".csv" required class="input">
+            <input type="submit" value="Predict from File" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+        </form>
+    </div>
+
+    <style>
+    .input {
+        @apply w-full px-4 py-2 border border-black rounded-lg focus:outline-none focus:border-2 focus:border-blue-600;
+    }
+</style>
+
+    <script>
+        function showForm() {
+            document.getElementById("form-details").classList.remove("hidden");
+            document.getElementById("form-file").classList.add("hidden");
+        }
+
+        function showFile() {
+            document.getElementById("form-details").classList.add("hidden");
+            document.getElementById("form-file").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

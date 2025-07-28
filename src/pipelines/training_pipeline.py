@@ -1,0 +1,20 @@
+import os, sys
+import pandas as pd
+from logger import logging
+from exception import CustomException
+
+from src.components.data_ingestion import DataIngestion
+from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
+
+if __name__=="__main__":
+    obj = DataIngestion()
+    train_data_path,test_data_path = obj.get_data()
+    print(train_data_path,test_data_path)
+
+    data_transformation = DataTransformation()
+    train_arr, test_arr, y_train, y_test = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
+    print(train_arr.shape, test_arr.shape, y_train.shape, y_test.shape)
+
+    model_trainer = ModelTrainer()
+    model_trainer.model_train(train_arr, test_arr, y_train, y_test)
