@@ -159,7 +159,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## 🤞 Acknowledgments
 
-* [Kaggle](https://www.kaggle.com/) for dataset
+* [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)) for dataset
 * Flask Documentation
 * Scikit-learn contributors
 
@@ -168,4 +168,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ## 🧑‍💻 Author
 
 **Bhumil Chauhan**
-[LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/yourusername)
+[LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/bhumil-chauhan-01a147245/)) • [GitHub]([https://github.com/yourusername](https://github.com/bhumilch191))
