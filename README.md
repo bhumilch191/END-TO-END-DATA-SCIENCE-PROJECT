@@ -50,7 +50,6 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 ## 🧪 Prerequisites
 
 * Python 3.8
-* Python 3.8
 * Conda installed
 * Git installed
 
@@ -169,5 +168,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ## 🧑‍💻 Author
 
 **Bhumil Chauhan**
-[LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
 [LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
