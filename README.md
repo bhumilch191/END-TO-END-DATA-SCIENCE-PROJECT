@@ -26,7 +26,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 🛠️ Technologies Used
 
-* Python 3.10+
+* Python 3.8
 * Flask
 * Pandas, NumPy, Scikit-learn
 * HTML, CSS, JavaScript (Vanilla)
@@ -37,7 +37,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 📁 Dataset
 
-* Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/)
+* Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
 * You may need a Kaggle account to download the dataset.
 
 ---
@@ -48,7 +48,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 🧪 Prerequisites
 
-* Python 3.10+
+* Python 3.8
 * Conda installed
 * Git installed
 
@@ -58,27 +58,27 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/customer-churn-prediction.git
+```windows CMD
+git clone https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT.git
 cd customer-churn-prediction
 ```
 
 ### 2. Set up the Conda Environment
 
-```bash
-conda create -n churn_env python=3.10 -y
-conda activate churn_env
+```Windows CMD
+conda create -p churn_env python==3.8 -y
 ```
+For activation use terminal suggestions.
 
 ### 3. Install Dependencies
 
-```bash
+```Windows CMD
 pip install -r requirements.txt
 ```
 
 Or using the pyproject standard:
 
-```bash
+```Windows CMD
 pip install .
 ```
 
@@ -105,7 +105,6 @@ Create a `.env` file and add:
 
 ```env
 SECRET_KEY=your-secret-key-here
-DEBUG=True
 ```
 
 ---
@@ -141,7 +140,7 @@ pip freeze > requirements.txt
 
 * Only CSV format is supported for uploads
 * No authentication system yet
-* Currently supports only binary classification (Churn / Not Churn)
+* Currently supports only binary classification (Exited / Not Exited)
 
 ---
 
@@ -168,4 +167,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ## 🧑‍💻 Author
 
 **Bhumil Chauhan**
-[LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/yourusername)
+[LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
