@@ -38,6 +38,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 ## 📁 Dataset
 
 * Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
+* Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
 * You may need a Kaggle account to download the dataset.
 
 ---
@@ -48,6 +49,7 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 🧪 Prerequisites
 
+* Python 3.8
 * Python 3.8
 * Conda installed
 * Git installed
@@ -92,7 +94,7 @@ cp .env.example .env
 ### 5. Run the App
 
 ```bash
-python app.py
+python application.py
 ```
 
 Then go to your browser: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
@@ -167,4 +169,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ## 🧑‍💻 Author
 
 **Bhumil Chauhan**
+[LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
 [LinkedIn](https://www.linkedin.com/in/bhumil-chauhan-01a147245/) • [GitHub](https://github.com/bhumilch191)
