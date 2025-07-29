@@ -2,7 +2,6 @@ blinker==1.8.2
 build==1.2.2.post1
 click==8.1.8
 colorama==0.4.6
--e git+https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT.git@fa282c82f39c26f1ac29e75056557d6f7c67d2fb#egg=customer_churn_prediction
 Flask==3.0.3
 importlib_metadata==8.5.0
 itsdangerous==2.2.0
