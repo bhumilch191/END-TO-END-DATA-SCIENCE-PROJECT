@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: end-to-end-ds-project
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: |
+      pip install --prefer-binary -r requirements.txt
+    startCommand: gunicorn application:app  # Change 'app:app' if your entrypoint is different
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.8.0  # You can change this to 3.9.0 if you want future-proofing
