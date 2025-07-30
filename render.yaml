@@ -5,6 +5,7 @@ services:
     plan: free
     runtime: python
     buildCommand: |
+      pip install --upgrade pip
       pip install --prefer-binary -r requirements.txt
     startCommand: gunicorn application:app  # Change 'app:app' if your entrypoint is different
     envVars:
