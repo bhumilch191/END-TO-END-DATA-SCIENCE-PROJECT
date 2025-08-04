@@ -1,5 +1,17 @@
 # 💡 Customer Churn Prediction
 
+*COMPANY*: CODETECH IT SOLUTION
+
+*NAME*: BHUMIL CHAUHAN
+
+*INTERN ID*: CT04DH1401
+
+*DOMAIN*: DATA SCIENCE
+
+*DURATION*: 4 WEEKS
+
+*MENTOR*: NEELA SANTOSH
+
 A complete end-to-end machine learning web application built with **Flask** to predict customer churn. The model is trained using a dataset sourced from **Kaggle**, and the application supports predictions via both **manual form input** and **CSV file upload**.
 
 This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a dedicated **Conda environment** for reproducibility.
