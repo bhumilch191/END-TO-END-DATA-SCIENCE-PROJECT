@@ -13,7 +13,7 @@ load_dotenv()
 app = Flask(__name__)
 
 app.secret_key = os.environ.get('SECRET_KEY')
-
+print(f"Secret key loaded: {app.secret_key}")
 # Home page with form
 @app.route('/')
 def home():
@@ -64,7 +64,8 @@ def predict():
             'Point Earned': [int(request.form['Point Earned'])]
         }
         df = pd.DataFrame(data)
-
+        print(f"DataFrame created from form data: {df.shape}")
+        print(f"DataFrame content: {df}")
         # Make prediction using your pipeline
         predictor = PredictionPipeline()
         result = predictor.predict(df)
@@ -96,4 +97,4 @@ def download():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host=0.0.0.0)
+    app.run(debug=True, host="0.0.0.0")

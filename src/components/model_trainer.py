@@ -1,8 +1,8 @@
 import os,sys
 import pandas as pd
 import numpy as np
-from logger import logging
-from exception import CustomException
+from src.logger import logging
+from src.exception import CustomException
 
 from sklearn.linear_model import LogisticRegression
 from src.utils import save_object, evaluate_model

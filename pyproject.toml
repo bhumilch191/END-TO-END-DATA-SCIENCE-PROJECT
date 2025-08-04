@@ -6,7 +6,7 @@ authors = [
   { name = "bhumil chauhan", email = "bhumilchauhan1914@gmail.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 
 # List your required dependencies here
@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools>=64.0", "wheel"]
+requires = ["setuptools>=80.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]

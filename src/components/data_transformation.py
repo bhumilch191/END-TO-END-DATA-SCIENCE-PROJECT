@@ -6,8 +6,8 @@ import sys,os
 from dataclasses import dataclass
 import pandas as pd
 import numpy as np
-from logger import logging
-from exception import CustomException
+from src.logger import logging
+from src.exception import CustomException
 from src.utils import save_object
 
 # Data transformation configuration

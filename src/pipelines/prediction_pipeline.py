@@ -1,5 +1,8 @@
 import sys,os
 import pickle
+
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LogisticRegression
 from src.logger import logging
 from src.exception import CustomException
 from src.utils import load_object
