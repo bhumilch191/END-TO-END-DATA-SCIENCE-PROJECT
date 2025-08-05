@@ -72,7 +72,10 @@ def predict():
         result = predictor.predict(df)
         print(f"Prediction result: {result}")
         logging.info(f"Prediction result: {result}")
-        return render_template('result.html', prediction=result)
+        if result == 0:
+            return render_template('result.html', prediction="Not Exit")
+        else:
+            return render_template('result.html', prediction="Exite")
 
 @app.route('/download')
 def download():
