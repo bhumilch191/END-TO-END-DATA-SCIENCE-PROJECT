@@ -20,8 +20,14 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 📸 Screenshots
 
-![Home Page](screenshots/home.png)
-![Result Table](screenshots/result.png)
+* This is my home page
+![Home Page](https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT/blob/main/image/Screenshot%201.png?raw=true)
+* Result, when user fill form 
+![Result](https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT/blob/main/image/Screenshot%202.png?raw=true)
+* You can also upload your file from your device
+![Upload your File](https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT/blob/main/image/Screenshot%203.png?raw=true)
+* Result table of your Uploaded file.
+![Result Table](https://github.com/bhumilch191/END-TO-END-DATA-SCIENCE-PROJECT/blob/main/image/Screenshot%204.png?raw=true)
 
 ---
 
@@ -49,7 +55,6 @@ This project is packaged using **PEP 621**-style `pyproject.toml` and runs in a 
 
 ## 📁 Dataset
 
-* Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
 * Dataset Source: [Kaggle - Customer Churn Dataset](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
 * You may need a Kaggle account to download the dataset.
 
