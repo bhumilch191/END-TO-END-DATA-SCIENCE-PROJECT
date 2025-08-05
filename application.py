@@ -75,7 +75,7 @@ def predict():
         if result == 0:
             return render_template('result.html', prediction="Not Exit")
         else:
-            return render_template('result.html', prediction="Exite")
+            return render_template('result.html', prediction="Exit")
 
 @app.route('/download')
 def download():
