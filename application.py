@@ -8,11 +8,12 @@ from src.exception import CustomException
 from src.utils import save_predictions
 from dotenv import load_dotenv
 
-load_dotenv()
 
 app = Flask(__name__)
 
 app.secret_key = os.environ.get('SECRET_KEY')
+if not app.secret_key:
+    raise ValueError("SECERET_KEY not found in environment!")
 print(f"Secret key loaded: {app.secret_key}")
 # Home page with form
 @app.route('/')
